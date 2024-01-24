@@ -565,9 +565,29 @@ namespace Castle.ActiveRecord.Framework
 			statelessSession.Dispose();
 		}
 
-		#endregion
+        public T Merge<T>(T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public T Merge<T>(string entityName, T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryOver<T, T> QueryOver<T>(string entityName) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryOver<T, T> QueryOver<T>(string entityName, Expression<Func<T>> alias) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
 #pragma warning restore 1591
-	}
+    }
 
 	/// <summary>
 	/// Wraps a NotImplementedException with a preconfigured Castle-like
