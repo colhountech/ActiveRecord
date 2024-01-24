@@ -13,3 +13,5 @@ _ReSharper*
 * Thumbs.db
 /.vs
 /src/*/.vs
+/packages*
+/clear-bin.bat
